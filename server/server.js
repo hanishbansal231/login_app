@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
-app.use("/api/",router);
+app.use("/api/", router);
 const PORT = 5000;
 app.get("/",(req,res) => {
     res.status(200).json("Home Get Requiest");
